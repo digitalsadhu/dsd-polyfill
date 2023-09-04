@@ -3,7 +3,7 @@
 	"version": "1.0.0",
 	"description": "Declarative Shadow DOM polyfill.",
 	"main": "lib/main.js",
-	"types": "types/lib/main.d.ts",
+	"types": "types/main.d.ts",
 	"exports": "./lib/main.js",
 	"type": "module",
 	"files": [
