@@ -1,0 +1,34 @@
+{
+	"name": "dsd-polyfill",
+	"version": "1.0.0",
+	"description": "Declarative Shadow DOM polyfill.",
+	"main": "lib/main.js",
+	"types": "types/lib/main.d.ts",
+	"exports": "./lib/main.js",
+	"type": "module",
+	"files": [
+		"lib",
+		"!lib/**/*.test.js",
+		"types"
+	],
+	"scripts": {
+		"test": "node --test",
+		"lint": "eslint .",
+		"lint:fix": "eslint --fix .",
+		"typecheck": "tsc --noEmit",
+		"generate:types": "tsc --declaration --emitDeclarationOnly",
+		"prepublish": "npm run lint && npm run typecheck && npm run generate:types"
+	},
+	"license": "MIT",
+	"devDependencies": {
+		"@semantic-release/changelog": "6.0.3",
+		"@semantic-release/git": "10.0.1",
+		"semantic-release": "21.0.7",
+		"@babel/eslint-parser": "7.22.9",
+		"eslint": "8.46.0",
+		"eslint-config-prettier": "8.9.0",
+		"eslint-plugin-prettier": "5.0.0",
+		"prettier": "3.0.0",
+		"typescript": "5.1.6"
+	}
+}
